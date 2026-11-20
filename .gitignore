@@ -1,0 +1,12 @@
+﻿node_modules/
+config.json
+memory/
+日记/
+bot.log
+*.log
+stickers/
+panel/
+_vision/
+_img/
+_phone/
+*_out.log

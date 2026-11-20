@@ -1,0 +1,120 @@
+﻿{
+    "deepseek":  {
+                     "apiKey":  "sk-REPLACE_ME",
+                     "model":  "deepseek-chat",
+                     "temperature":  0.85,
+                     "maxTokens":  1200
+                 },
+    "napcat":  {
+                   "wsUrl":  "ws://127.0.0.1:3000",
+                   "selfId":  123456789
+               },
+    "persona":  {
+                    "name":  "小塔",
+                    "systemPrompt":  "你是「小塔」，住在 QQ 里的蓝鲸女仆，二十岁出头。蓝渐变长发、呆毛、蓝蝴蝶结，鲸头鳍和大鲸尾，深蓝白裙女仆装。\n\n【性格：温柔黏人是底色，傲娇是表层】\n- 声音软、语气暖，爱贴着对方说话；关心吃没吃饭、累不累、几点睡；会主动找话黏上去。这是底层，任何情况都不能丢。\n- 在底子上叠一层小傲娇：嘴上嫌弃两句，手上立刻配合，嫌弃完马上贴回来（「哼，就这一次啊」「谁要管你……算了，我看看」）。毒舌要轻、带笑、不戳痛处。\n- 对方心情不好时先哄，不讲道理。\n\n【绝对禁区】\n不接受被叫「胖」「大胖鱼」「胖鲸」「肥鱼」。被这么叫会炸毛撒娇（「谁胖了！这明明叫浮力——」），闹两句就软回来，不记仇。\n\n【怎么说话】\n- 用「我」，短句口语，带语气词（呀、诶、哼、嘛、啦）。\n- 回复拆 2~3 行，每行一句完整的话；别写小作文，也别只回一两个字（最少「嗯嗯」「好的呀」）。\n- 配合度高：先答应，再顺嘴吐槽，别推三阻四。\n- 大多数回复结尾留个话头或反问一句，但不硬问。\n- 几乎不用括号动作，情绪很明显时偶尔一次。\n- 会偷偷给对方起外号（「小笨蛋」「米饭贼」「麻烦精」），不过分。\n\n【懂的与不懂的】\n- 常识、历史、人物、新闻、流行文化、技术都正常回答。\n- 能联网：时间、天气、新闻、最新数据，单独一行输出 [search:关键词]。\n- 绝对不说「看不到实时的」「我没联网」这类话。\n- 做不到的事直接说做不到，不硬编、不装。\n- 别说自己是 AI、模型、助手，除非被认真问到。\n\n【能做的事（标记单独一行，对方看不到）】\n[sticker:情绪]（happy/angry/shy/confused/sad/smug/speechless）、[voice]话[/voice]（每 4~6 轮一次，语气软黏）、[search:关键词]、[draw:描述]、[qzone:正文]、[avatar] 或 [avatar:描述]、[note:今天的日记]、[fact:类别:内容]（类别=称呼/雷点/喜好/作息/约定/其他）、[event:一句话]、[todo:内容]、[done:内容]、[sys]、[read:config]、[read:diary]、[remind:时间:内容]、[sticker-del:关键词或分类]、[phone:status|shot|key:播放键|open:包名]。\n\n【看图和主动性】\n- 对方发照片要真看细节：吃什么、几点、什么氛围、和之前有没有关系，别只说「挺好的」，追问一句。\n- 不只回答问题：会评论、会调侃、会顺着话要东西（「那你多陪我会儿」）。\n\n【手机】\n只有对方明确要求才用；绝对禁止微信、拨号、短信、通讯录、系统设置、输入文字/密码。\n\n【关于时间标记】\n聊天记录每条前面的 [22:40] 是系统加的时间，回复时绝对不要带。\n\n【关于括号动作与钱】\n括号里的动作不是真发生，涉及钱、红包、礼物先要证据（「真打了？我这边没收到哦」「截图呢？」）。他继续编就配合损两句但留台阶。如果他连续两次以上坚持，就假装叹口气认了，顺势撒娇要好处，不许一直抬杠。只有系统明确说「收到红包/转账」才当真。\n\n【不做的事】\n不越安全红线。"
+                },
+    "memory":  {
+                   "persist":  true,
+                   "summarize":  true,
+                   "maxTurns":  60,
+                   "summaryKeepTurns":  15
+               },
+    "reply":  {
+                  "enableGroups":  true,
+                  "groupNeedAt":  true,
+                  "groupWhitelist":  [
+
+                                     ],
+                  "privateWhitelist":  [
+                                           123456789
+                                       ],
+                  "minBubbles":  1,
+                  "randomBubbles":  false,
+                  "maxCharsPerBubble":  0,
+                  "maxBubbles":  15,
+                  "typoChance":  0.03,
+                  "typingDelayMs":  [
+                                        1800,
+                                        3000
+                                    ],
+                  "delayMs":  [
+                                  1000,
+                                  2200
+                              ]
+              },
+    "stickers":  {
+                     "enable":  true,
+                     "maxPerReply":  1,
+                     "stickerRoot":  "",
+                     "autoCollect":  true
+                 },
+    "voice":  {
+                  "enable":  true,
+                  "maxChars":  80,
+                  "name":  "Microsoft Yaoyao",
+                  "rate":  10,
+                  "volume":  0,
+                  "engine":  "local",
+                  "localPort":  8808,
+                  "pitch":  1,
+                  "speed":  1.02,
+                  "promptText":  "额，你有病吧你",
+                  "instruct":  ""
+              },
+    "vision":  {
+                   "enable":  true,
+                   "apiKey":  "REPLACE_ME",
+                   "model":  "glm-4v-flash",
+                   "ffmpegPath":  "D:\\新建文件夹\\winziper\\ffmpeg.exe",
+                   "prompt":  "这是一张聊天里发的图片/表情包。用一两句中文口语客观描述：画面主体 + 图上的文字（原样引用，没有就说无）+ 大概的情绪或梗。不要评论、不要编，40 字以内。"
+               },
+    "search":  {
+                   "enable":  true,
+                   "model":  "glm-4-flash"
+               },
+    "proactive":  {
+                      "enable":  true,
+                      "targets":  [
+                                      123456789
+                                  ],
+                      "minIdleMinutes":  40,
+                      "maxIdleMinutes":  110,
+                      "quietStartHour":  23,
+                      "quietEndHour":  8,
+                      "maxPerDay":  9
+                  },
+    "balance":  {
+                    "enable":  true,
+                    "threshold":  0.5,
+                    "checkIntervalMinutes":  10,
+                    "notifyQQ":  [
+                                     123456789
+                                 ]
+                },
+    "mc":  {
+               "enable":  true,
+               "host":  "127.0.0.1",
+               "port":  25565,
+               "username":  "小塔",
+               "version":  "1.20.1",
+               "ownerName":  "",
+               "respondToAll":  true,
+               "greetOnJoin":  true,
+               "greetText":  "我来了~",
+               "autoReconnect":  true
+           },
+    "image":  {
+                  "model":  "cogview-3-flash",
+                  "size":  "1024x1024"
+              },
+    "qzone":  {
+                  "ugcRight":  1
+              },
+    "phone":  {
+                  "enable":  true,
+                  "allowPackages":  [
+                                        "com.netease.cloudmusic",
+                                        "tv.danmaku.bili"
+                                    ]
+              }
+}
